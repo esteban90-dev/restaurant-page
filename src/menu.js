@@ -12,7 +12,6 @@ function menu(){
   const col6 = menuItem("./assets/img/ratatouille.JPG", "Ratatouille");
   const col7 = menuItem("./assets/img/peas-carrots-fish.JPG", "Peas and Carrots with Canned Fish");
   const col8 = menuItem("./assets/img/oatmeal-and-coffee.JPG", "Oatmeal and Coffee");
-  const col9 = menuItem("./assets/img/ramen-noodles.JPG", "Ramen Noodles");
   const col10 = menuItem("./assets/img/nutella.JPG", "Jar of Nutella");
   const col11 = menuItem("./assets/img/noodles.JPG", "Noodles");
   const col12 = menuItem("./assets/img/IMG_1015.JPG", "Canned Whole Chicken");
@@ -44,7 +43,6 @@ function menu(){
   row.appendChild(col19);
 
   const div = document.createElement("div");
-  div.classList.add("bg-white","p-2","p-4_md","border-radius-3","shadow-md");
   div.appendChild(row);
 
   return div;

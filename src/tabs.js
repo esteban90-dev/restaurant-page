@@ -32,4 +32,28 @@ function tabs(){
   return row;
 }
 
-export default tabs;
+function setTabActive(tabElement){
+  //remove dark background if it exists
+  if (tabElement.classList.contains("bg-gray-200")){
+    tabElement.classList.remove("bg-gray-200");
+  }
+
+  //set white background if it doesnt exist
+  if (!tabElement.classList.contains("bg-white")){
+    tabElement.classList.add("bg-white");
+  }
+}
+
+function setTabInactive(tabElement){
+  //remove white background if it exists
+  if (tabElement.classList.contains("bg-white")){
+    tabElement.classList.remove("bg-white");
+  }
+
+  //set dark background if it doesn't exist
+  if (!tabElement.classList.contains("bg-gray-200")){
+    tabElement.classList.add("bg-gray-200");
+  }
+}
+
+export { tabs, setTabActive, setTabInactive };

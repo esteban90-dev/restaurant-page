@@ -29,7 +29,6 @@ function about(){
 
   //stick containers into div
   const div = document.createElement("div");
-  div.classList.add("bg-white","p-2","p-4_md","border-radius-3","shadow-md");
   div.appendChild(imageRow);
   div.appendChild(textRow);
 
