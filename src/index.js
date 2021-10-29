@@ -2,6 +2,7 @@ import heading from "./heading.js";
 import { tabs, setTabActive, setTabInactive } from "./tabs.js";
 import about from "./about.js";
 import menu from "./menu.js";
+import contact from "./contact.js";
 
 //add main container
 const container = document.createElement("div");
@@ -56,5 +57,22 @@ document.querySelector("#about").addEventListener('click', ()=> {
   //change the menu/contact tabs to inactive
   setTabInactive(document.querySelector("#menu"));
   setTabInactive(document.querySelector("#contact"));
+});
+
+document.querySelector("#contact").addEventListener('click', ()=> {
+  //clear the current page
+  while(page.firstChild){
+    page.removeChild(page.firstChild);
+  }
+
+  //render the contact page
+  page.appendChild(contact());
+
+  //change the contact tab to active
+  setTabActive(document.querySelector("#contact"));
+
+  //change the about/menu tabs to inactive
+  setTabInactive(document.querySelector("#about"));
+  setTabInactive(document.querySelector("#menu"));
 });
 

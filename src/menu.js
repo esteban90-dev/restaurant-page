@@ -1,27 +1,27 @@
-import menuItem from "./menu-item.js";
+import menuItemCard from "./menu-item-card.js";
 
 function menu(){
   const row = document.createElement("div");
   row.classList.add("row");
 
-  const col1 = menuItem("./assets/img/ramen-noodles.JPG", "Ramen Noodles");
-  const col2 = menuItem("./assets/img/tortilla-pbj.JPG", "PB&J Tortilla");
-  const col3 = menuItem("./assets/img/stirfry-and-beer.JPG", "Stirfry and Beer");
-  const col4 = menuItem("./assets/img/scalloped-potatoes.JPG", "Scalloped Potatoes");
-  const col5 = menuItem("./assets/img/refried-beans.JPG", "Refried Beans");
-  const col6 = menuItem("./assets/img/ratatouille.JPG", "Ratatouille");
-  const col7 = menuItem("./assets/img/peas-carrots-fish.JPG", "Peas and Carrots with Canned Fish");
-  const col8 = menuItem("./assets/img/oatmeal-and-coffee.JPG", "Oatmeal and Coffee");
-  const col10 = menuItem("./assets/img/nutella.JPG", "Jar of Nutella");
-  const col11 = menuItem("./assets/img/noodles.JPG", "Noodles");
-  const col12 = menuItem("./assets/img/IMG_1015.JPG", "Canned Whole Chicken");
-  const col13 = menuItem("./assets/img/fresh-vegetables.JPG", "Fresh Vegetables");
-  const col14 = menuItem("./assets/img/dehydrated-refried-beans.JPG", "Dehyrated Refried Beans");
-  const col15 = menuItem("./assets/img/cheesecake.JPG", "Frozen Aisle Cheesecake");
-  const col16 = menuItem("./assets/img/canned-tamales.JPG", "Canned Tamales");
-  const col17 = menuItem("./assets/img/canned-hamburger.JPG", "Canned Hamburger");
-  const col18 = menuItem("./assets/img/baguette.JPG", "Bread");
-  const col19 = menuItem("./assets/img/avocado-and-fish.JPG", "Avocado and Canned Fish");
+  const col1 = menuItemCard("./assets/img/ramen-noodles.JPG", "Ramen Noodles");
+  const col2 = menuItemCard("./assets/img/tortilla-pbj.JPG", "PB&J Tortilla");
+  const col3 = menuItemCard("./assets/img/stirfry-and-beer.JPG", "Stirfry and Beer");
+  const col4 = menuItemCard("./assets/img/scalloped-potatoes.JPG", "Scalloped Potatoes");
+  const col5 = menuItemCard("./assets/img/refried-beans.JPG", "Refried Beans");
+  const col6 = menuItemCard("./assets/img/ratatouille.JPG", "Ratatouille");
+  const col7 = menuItemCard("./assets/img/peas-carrots-fish.JPG", "Peas and Carrots with Canned Fish");
+  const col8 = menuItemCard("./assets/img/oatmeal-and-coffee.JPG", "Oatmeal and Coffee");
+  const col10 = menuItemCard("./assets/img/nutella.JPG", "Jar of Nutella");
+  const col11 = menuItemCard("./assets/img/noodles.JPG", "Noodles");
+  const col12 = menuItemCard("./assets/img/IMG_1015.JPG", "Canned Whole Chicken");
+  const col13 = menuItemCard("./assets/img/fresh-vegetables.JPG", "Fresh Vegetables");
+  const col14 = menuItemCard("./assets/img/dehydrated-refried-beans.JPG", "Dehyrated Refried Beans");
+  const col15 = menuItemCard("./assets/img/cheesecake.JPG", "Frozen Aisle Cheesecake");
+  const col16 = menuItemCard("./assets/img/canned-tamales.JPG", "Canned Tamales");
+  const col17 = menuItemCard("./assets/img/canned-hamburger.JPG", "Canned Hamburger");
+  const col18 = menuItemCard("./assets/img/baguette.JPG", "Bread");
+  const col19 = menuItemCard("./assets/img/avocado-and-fish.JPG", "Avocado and Canned Fish");
   
   row.appendChild(col1);
   row.appendChild(col2);

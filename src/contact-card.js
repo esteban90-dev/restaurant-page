@@ -1,20 +1,20 @@
-function menuItem(imagePath, description){
-  //return a menu item 'card'
+function contactCard(imagePath, name){
   const col = document.createElement("div");
-  col.classList.add("col-12","mb-4")
+  col.classList.add("col-12","col-4_lg","mb-5","mb-0_lg");
 
   const img = document.createElement("img");
   img.src = imagePath;
-  img.classList.add("width-100");
+  img.classList.add("width-100","height-100","object-fit-cover");
 
   const p = document.createElement("p");
+  p.innerHTML = name;
   p.classList.add("text-center");
-  p.innerHTML = description;
 
+  //stick image and p elements into col
   col.appendChild(img);
   col.appendChild(p);
-  
+
   return col;
 }
 
-export default menuItem;
+export default contactCard;
