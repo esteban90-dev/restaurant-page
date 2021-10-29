@@ -19,7 +19,7 @@ function menu(){
   const col14 = menuItemCard("./assets/img/dehydrated-refried-beans.JPG", "Dehyrated Refried Beans","What are you gonna eat when you run out of water?");
   const col15 = menuItemCard("./assets/img/cheesecake.JPG", "Frozen Aisle Cheesecake","This is best served half thawed - that way it's kinda like ice cream and kinda like cheesecake at the same time.");
   const col16 = menuItemCard("./assets/img/canned-tamales.JPG", "Canned Tamales","A delicious mess.");
-  const col17 = menuItemCard("./assets/img/canned-hamburger.JPG", "Canned Hamburger","When your far from civilization but need that burger fix.");
+  const col17 = menuItemCard("./assets/img/canned-hamburger.JPG", "Canned Hamburger","When you're far from civilization but need that burger fix.");
   const col18 = menuItemCard("./assets/img/baguette.JPG", "Bread","This is about all that's cheap in Europe.");
   const col19 = menuItemCard("./assets/img/avocado-and-fish.JPG", "Avocado and Canned Fish","If you mash it up real good it makes a good 'pate'.");
   

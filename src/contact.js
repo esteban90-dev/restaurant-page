@@ -9,7 +9,7 @@ function contact(){
   const p = document.createElement("p");
   p.classList.add("text-justify");
   p.innerHTML = "The Dirtbag Diner has no permanent location. " +
-  "You can find us in an old van parked in Walmart Parking Lots or off of forest service roads with 'Dirtbag Diner' spray painted on the side. " +
+  "You can find us in an old van with 'Dirtbag Diner' spray painted on the side.  We are usually parked in Walmart Parking lots or off of forest service roads. " +
   "We would provide more information about the van but the truth is the vans we drive are so old and decrepit that they don't last long. " +
   "We have no cellphones and don't exist on social media. Below are the founding members who live full time in the Dirtbag Diner van.";
   col1.appendChild(p);
