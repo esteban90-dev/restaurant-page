@@ -29,8 +29,8 @@ function about(){
 
   //stick containers into div
   const div = document.createElement("div");
-  div.appendChild(imageRow);
   div.appendChild(textRow);
+  div.appendChild(imageRow);
 
   return div;
 }

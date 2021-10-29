@@ -1,18 +1,25 @@
-function menuItemCard(imagePath, description){
+function menuItemCard(imagePath, title, description){
   //return a menu item 'card'
   const col = document.createElement("div");
-  col.classList.add("col-12","col-6_lg","mb-5")
+  col.classList.add("col-12","col-6_lg")
 
+  const imgDiv = document.createElement("div");
+  imgDiv.classList.add("height-5","height-6_sm");
   const img = document.createElement("img");
   img.src = imagePath;
   img.classList.add("width-100","height-100","object-fit-cover");
+  imgDiv.appendChild(img);
 
-  const p = document.createElement("p");
-  p.classList.add("text-center");
-  p.innerHTML = description;
+  const pTitle = document.createElement("p");
+  pTitle.innerHTML = title;
 
-  col.appendChild(img);
-  col.appendChild(p);
+  const pDescription = document.createElement("p");
+  pDescription.classList.add("text-xs","text-gray-600","mb-4");
+  pDescription.innerHTML = description;
+
+  col.appendChild(imgDiv);
+  col.appendChild(pTitle);
+  col.appendChild(pDescription);
   
   return col;
 }
