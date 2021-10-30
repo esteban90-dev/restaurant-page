@@ -20,9 +20,9 @@ function contact(){
   row2.classList.add("row");
 
   //create person 'cards'
-  const col2 = contactCard("../dist/assets/img/your-boy-1.JPG", "Your Boy Alex");
-  const col3 = contactCard("../dist/assets/img/your-boy-2.JPG", "Your Boy Kit");
-  const col4 = contactCard("../dist/assets/img/your-boy-3.JPG", "Your Boy Eric");
+  const col2 = contactCard("./assets/img/your-boy-1.JPG", "Your Boy Alex");
+  const col3 = contactCard("./assets/img/your-boy-2.JPG", "Your Boy Kit");
+  const col4 = contactCard("./assets/img/your-boy-3.JPG", "Your Boy Eric");
 
   //stick cols into person card row
   row2.appendChild(col2);
