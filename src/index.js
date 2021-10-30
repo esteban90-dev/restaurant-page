@@ -1,28 +1,12 @@
-import heading from "./heading.js";
-import { tabs, setTabActive, setTabInactive } from "./tabs.js";
+import { setTabActive, setTabInactive } from "./tabs.js";
 import about from "./about.js";
 import menu from "./menu.js";
 import contact from "./contact.js";
+import initialPageLoad from "./initial-page-load.js";
 
-//add main container
-const container = document.createElement("div");
-container.classList.add("container","max-width-8","m-auto");
-document.querySelector("#content").appendChild(container);
-
-//add heading
-container.appendChild(heading());
-
-//add tabs
-container.appendChild(tabs());
-
-//add page container
-const page = document.createElement("div");
-page.classList.add("mb-5","bg-white","p-2","p-4_md","border-radius-3","shadow-lg");
-page.setAttribute("id","#page");
-container.appendChild(page);
-
-//add about
-page.appendChild(about());
+initialPageLoad();
+const page = document.querySelector("#page");
+console.dir(page);
 
 //add event listeners
 document.querySelector("#menu").addEventListener('click', ()=> {
