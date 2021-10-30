@@ -6071,3 +6071,7 @@ h1 {
 .object-fit-cover{
   object-fit: cover;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
